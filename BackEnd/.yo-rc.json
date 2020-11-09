@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "co.uniminuto.susalud",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "suSalud_back",
+    "packageName": "co.uniminuto.susalud",
+    "packageFolder": "co/uniminuto/susalud",
+    "serverPort": "8090",
+    "authenticationType": "jwt",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mssql",
+    "prodDatabaseType": "mssql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTQ0OTRmZTlmZDQ5YzUwMzM1YjVlMTNiZmMxNWI1YTQ5MDFkYjU2NWRiZDczNTlmYTE1OTI3YWQ3ZDhhOGM5YTgyMDVkOWY2ZjFmYTdiOTFmZjM1MDM0ZjIxZmU5OTZjNDU3ODllOGJlZTFlM2ZmNzA0NGY3YmZkOTg5YzA3OWM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1604870769938,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en", "es"],
+    "blueprints": [],
+    "skipClient": true
+  }
+}
