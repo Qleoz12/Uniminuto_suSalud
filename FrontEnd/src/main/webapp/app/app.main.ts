@@ -14,3 +14,4 @@ platformBrowserDynamic()
   // eslint-disable-next-line no-console
   .then(() => console.log('Application started'))
   .catch(err => console.error(err));
+/* eslint-enable no-console */
