@@ -1,0 +1,3 @@
+/FrontEnd/build
+/FrontEnd/node_modules/*
+/BackEnd/target/*
