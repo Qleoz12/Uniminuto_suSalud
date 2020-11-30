@@ -34,11 +34,119 @@
             <option *ngFor="let macroproceso of verificadorList" [value]="macroproceso">{{ macroproceso.title }}</option>
         </select>
     </div>
+
+    <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
+    
     <div class="row">
         <div class="col">
+            <div class="form-group">
+                <label for="">Técnica Evaluativas</label>
+                <input class="input" type="search" #agmSearch>
+            </div>
+            <ul class="list-group list-group-scroll">
+                <li class="list-group-item" *ngFor="let macroproceso of tecnicasEvualuativas" [value]="macroproceso">
+                    <div class="custom-control custom-checkbox m-1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck-'{{macroproceso.id}}'" name="example1">
+                        <label class="custom-control-label" for="customCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                      </div>
+                </li>
+              </ul>
         </div>
         <div class="col">
+            
+            <div class="form-group">
+                <label for="">Fuentes Referenciales</label>
+                <input class="input" type="search" #agmSearch>
+            </div>
+            <ul class="list-group list-group-scroll">
+                <div class="list-group-item" *ngFor="let macroproceso of fuentesRefenreciales">
+                    <div class="custom-control custom-checkbox m-1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2-'{{macroproceso.id}}'" name="example1">
+                        <label class="custom-control-label" for="customCheck2-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                      </div>
+                </div>
+              </ul>
         </div>
+    </div>
+    
+    <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
+
+    <p style="display: block;">Criterios de puntuación</p>  
+    <div class="row">
+        <ul class="list-group">
+            <li *ngFor="let macroproceso of criterios" >
+                
+                    <input type="number" 
+                            class="col-2  offset-2" 
+                            id="custom3-'{{macroproceso.id}}'" name="example1">
+                    <label  class="col-5" 
+                            for="custom3-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                 
+            </li>
+          </ul>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="">Categorias / Tipos de IAFA</label>
+                <input class="input" type="search" #agmSearch>
+            </div>
+            <ul class="list-group list-group-scroll">
+                <li class="list-group-item" *ngFor="let macroproceso of categorias" [value]="macroproceso">
+                    <div class="custom-control custom-checkbox m-1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck-'{{macroproceso.id}}'" name="example1">
+                        <label class="custom-control-label" for="customCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                      </div>
+                </li>
+              </ul>
+        </div>
+        <div class="col">
+            
+            <div class="form-group">
+                <label for="">Ruta Crítica</label>
+                <input class="input" type="search" #agmSearch>
+            </div>
+            <ul class="list-group list-group-scroll">
+                <div class="list-group-item" *ngFor="let macroproceso of rutasCritica">
+                    <div class="custom-control custom-checkbox m-1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2-'{{macroproceso.id}}'" name="example1">
+                        <label class="custom-control-label" for="customCheck2-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                      </div>
+                </div>
+              </ul>
+        </div>
+    </div>
+    
+    <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
+    
+    <div class="row">
+       
+            <div class="col-3">
+                <label >año</label>
+                <select class="form-control">
+                    <option *ngFor="let macroproceso of anos" [value]="macroproceso">{{ macroproceso.title }}</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <label >periodo</label>
+                <select class="form-control">
+                    <option *ngFor="let macroproceso of periodos" [value]="macroproceso">{{ macroproceso.title }}</option>
+                </select>
+            </div>
+
+        <div class="col-6">
+            estado 
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">activo</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">inactivo</label>
+              </div>
+
+        </div>  
     </div>
     <button type="submit"  class="btn btn-primary" jhiTranslate="settings.form.button">Save</button>
 </form>

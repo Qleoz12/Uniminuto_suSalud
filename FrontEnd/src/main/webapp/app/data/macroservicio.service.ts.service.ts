@@ -25,7 +25,52 @@ export class MacroservicioService {
     return this.http.get<any>(SERVER_FAKEAPI_URL + 'verificadores');
   }
 
+  getTecnicasEvaluativas(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'TecnicasEvaluativas');
+  }
+
+  getFuenteReferenciales(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'FuenteReferenciales');
+  }
+
+  getCriterioPuntuacion(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'criteriosPuntiacion');
+  }
+
+  getcategorias(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'categorias');
+  }
+
+  getIAFAS(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'IAFAS');
+  }
+
+  getRutaCritica(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'rutasCritica');
+  }
+
+  getAños(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'anos');
+  }
+
+  getPeriodos(): Observable<any> {
+    return this.http.get<any>(SERVER_FAKEAPI_URL + 'periodos');
+  }
+
   getAll(): Observable<any> {
-    return forkJoin([this.getMacorservicios(), this.getProcesos(), this.getSubprocesos(), this.getverificadores()]);
+    return forkJoin([
+      this.getMacorservicios(),
+      this.getProcesos(),
+      this.getSubprocesos(),
+      this.getverificadores(),
+      this.getTecnicasEvaluativas(),
+      this.getFuenteReferenciales(),
+      this.getCriterioPuntuacion(),
+      this.getcategorias(),
+      this.getIAFAS(),
+      this.getRutaCritica(),
+      this.getAños(),
+      this.getPeriodos(),
+    ]);
   }
 }

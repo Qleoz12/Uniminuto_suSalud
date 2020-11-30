@@ -287,5 +287,78 @@
         { "id": 3, "title": "verificador 3", "author": "fake" },
         { "id": 4, "title": "verificador 4", "author": "fake" }
         ]
+    ,
+    "tecnicasEvaluativas": 
+    [
+            { "id": 1, "title": "Tec. Evaluativa 1", "checked": true, "author": "fake" },
+            { "id": 2, "title": "Tec. Evaluativa 2", "checked": true, "author": "fake" },
+            { "id": 3, "title": "Tec. Evaluativa 3", "checked": true, "author": "fake" },
+            { "id": 4, "title": "Tec. Evaluativa 4", "checked": true, "author": "fake" },
+            { "id": 5, "title": "Tec. Evaluativa 5", "checked": true, "author": "fake" },
+            { "id": 6, "title": "Tec. Evaluativa 6", "checked": true, "author": "fake" },
+            { "id": 7, "title": "Tec. Evaluativa 7", "checked": true, "author": "fake" },
+            { "id": 8, "title": "Tec. Evaluativa 8", "checked": true, "author": "fake" }
 
+    ],
+    "fuenteReferenciales": 
+    [
+            { "id": 1, "title": "Fuente Referencial 1", "author": "fake" },
+            { "id": 2, "title": "Fuente Referencial 2", "author": "fake" },
+            { "id": 3, "title": "Fuente Referencial 3", "author": "fake" },
+            { "id": 4, "title": "Fuente Referencial 4", "author": "fake" },
+            { "id": 5, "title": "Fuente Referencial 5", "author": "fake" },
+            { "id": 6, "title": "Fuente Referencial 6", "author": "fake" },
+            { "id": 7, "title": "Fuente Referencial 7", "author": "fake" },
+            { "id": 8, "title": "Fuente Referencial 8", "author": "fake" }
+    ],
+    "criteriosPuntiacion": 
+    [
+            { "id": 1, "title": "criterio 1", "author": "fake" },
+            { "id": 2, "title": "criterio 2", "author": "fake" },
+            { "id": 3, "title": "criterio 3", "author": "fake" },
+            { "id": 4, "title": "criterio 4", "author": "fake" }
+    ],
+    "categorias": 
+    [
+            { "id": 1, "title": "categorias 1", "author": "fake" },
+            { "id": 2, "title": "categorias 2", "author": "fake" },
+            { "id": 3, "title": "categorias 3", "author": "fake" },
+            { "id": 4, "title": "categorias 4", "author": "fake" }
+    ],
+    "IAFAS": 
+    [
+            { "id": 1, "title": "Iafas 1", "author": "fake" },
+            { "id": 2, "title": "Iafas 2", "author": "fake" },
+            { "id": 3, "title": "Iafas 3", "author": "fake" },
+            { "id": 4, "title": "Iafas 4", "author": "fake" }
+    ],
+    "rutasCritica": 
+    [
+            { "id": 1, "title": "Ruta Critica 1", "author": "fake" },
+            { "id": 2, "title": "Ruta Critica 2", "author": "fake" },
+            { "id": 3, "title": "Ruta Critica 3", "author": "fake" },
+            { "id": 4, "title": "Ruta Critica 4", "author": "fake" }
+    ],
+    "anos": 
+    [
+            { "id": 1, "title": "2017", "author": "fake" },
+            { "id": 2, "title": "2018", "author": "fake" },
+            { "id": 3, "title": "2019", "author": "fake" },
+            { "id": 4, "title": "2020", "author": "fake" }
+    ],
+    "periodos": 
+    [
+            { "id": 1, "title": "Periodo 1", "author": "fake" },
+            { "id": 2, "title": "Periodo 2", "author": "fake" },
+            { "id": 3, "title": "Periodo 3", "author": "fake" },
+            { "id": 4, "title": "Periodo 4", "author": "fake" },
+            { "id": 5, "title": "Periodo 5", "author": "fake" },
+            { "id": 6, "title": "Periodo 6", "author": "fake" },
+            { "id": 7, "title": "Periodo 7", "author": "fake" },
+            { "id": 8, "title": "Periodo 8", "author": "fake" },
+            { "id": 9, "title": "Periodo 9", "author": "fake" },
+            { "id": 10, "title": "Periodo 10", "author": "fake" },
+            { "id": 11, "title": "Periodo 11", "author": "fake" },
+            { "id": 12, "title": "Periodo 12", "author": "fake" }
+    ]
 }
