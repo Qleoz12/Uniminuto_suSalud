@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MacroservicioService } from 'app/data/macroservicio.service.ts.service';
-
+import { VerificadorImpl } from 'app/entities/dto/impl/verificadorImpl';
 @Component({
   selector: 'jhi-test',
   templateUrl: './test.component.html',
@@ -19,6 +19,8 @@ export class TestComponent implements OnInit {
   rutasCritica: any[] = [];
   anos: any[] = [];
   periodos: any[] = [];
+
+  verificador: VerificadorImpl = new VerificadorImpl();
 
   constructor(private _sMacroservicioService: MacroservicioService) {}
 
@@ -47,5 +49,19 @@ export class TestComponent implements OnInit {
 
   updateChkbx(a: any) {
     console.log(a); // eslint-disable-line no-console
+  }
+
+  save() {
+    console.log(this.verificador); // eslint-disable-line no-console
+    //checkboxes
+    this.tecnicasEvualuativas = this.tecnicasEvualuativas.filter(x => x.checked);
+    this.fuentesRefenreciales = this.fuentesRefenreciales.filter(x => x.checked);
+    this.categorias = this.categorias.filter(x => x.checked);
+    this.rutasCritica = this.rutasCritica.filter(x => x.checked);
+
+    console.log(this.tecnicasEvualuativas); // eslint-disable-line no-console
+    console.log(this.fuentesRefenreciales); // eslint-disable-line no-console
+    console.log(this.categorias); // eslint-disable-line no-console
+    console.log(this.rutasCritica); // eslint-disable-line no-console
   }
 }

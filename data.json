@@ -1,5 +1,5 @@
 {
-    "people":
+    "people": 
     {
         "count": 82,
         "next": "http://swapi.dev/api/people/?page=2",
@@ -286,85 +286,11 @@
         { "id": 2, "title": "verificador 2", "author": "fake" },
         { "id": 3, "title": "verificador 3", "author": "fake" },
         { "id": 4, "title": "verificador 4", "author": "fake" }
-        ]
-    ,
-    "tecnicasEvaluativas":
-    [
-            { "id": 1, "title": "Tec. Evaluativa 1", "checked": false, "author": "fake" },
-            { "id": 2, "title": "Tec. Evaluativa 2", "checked": false, "author": "fake" },
-            { "id": 3, "title": "Tec. Evaluativa 3", "checked": false, "author": "fake" },
-            { "id": 4, "title": "Tec. Evaluativa 4", "checked": false, "author": "fake" },
-            { "id": 5, "title": "Tec. Evaluativa 5", "checked": false, "author": "fake" },
-            { "id": 6, "title": "Tec. Evaluativa 6", "checked": false, "author": "fake" },
-            { "id": 7, "title": "Tec. Evaluativa 7", "checked": false, "author": "fake" },
-            { "id": 8, "title": "Tec. Evaluativa 8", "checked": false, "author": "fake" }
-
-    ],
-    "fuenteReferenciales":
-    [
-            { "id": 1, "title": "Fuente Referencial 1","checked": false, "author": "fake" },
-            { "id": 2, "title": "Fuente Referencial 2","checked": false, "author": "fake" },
-            { "id": 3, "title": "Fuente Referencial 3","checked": false, "author": "fake" },
-            { "id": 4, "title": "Fuente Referencial 4","checked": false, "author": "fake" },
-            { "id": 5, "title": "Fuente Referencial 5","checked": false, "author": "fake" },
-            { "id": 6, "title": "Fuente Referencial 6","checked": false, "author": "fake" },
-            { "id": 7, "title": "Fuente Referencial 7","checked": false, "author": "fake" },
-            { "id": 8, "title": "Fuente Referencial 8","checked": false, "author": "fake" }
-    ],
-    "criteriosPuntiacion":
-    [
-            { "id": 1, "title": "criterio 1", "author": "fake" },
-            { "id": 2, "title": "criterio 2", "author": "fake" },
-            { "id": 3, "title": "criterio 3", "author": "fake" },
-            { "id": 4, "title": "criterio 4", "author": "fake" }
-    ],
-    "categorias":
-    [
-            { "id": 1, "title": "categorias 1","checked": false, "author": "fake" },
-            { "id": 2, "title": "categorias 2","checked": false, "author": "fake" },
-            { "id": 3, "title": "categorias 3","checked": false, "author": "fake" },
-            { "id": 4, "title": "categorias 4","checked": false, "author": "fake" }
-    ],
-    "IAFAS":
-    [
-            { "id": 1, "title": "Iafas 1","checked": false, "author": "fake" },
-            { "id": 2, "title": "Iafas 2","checked": false, "author": "fake" },
-            { "id": 3, "title": "Iafas 3","checked": false, "author": "fake" },
-            { "id": 4, "title": "Iafas 4","checked": false, "author": "fake" }
-    ],
-    "rutasCritica":
-    [
-            { "id": 1, "title": "Ruta Critica 1","checked": false, "author": "fake" },
-            { "id": 2, "title": "Ruta Critica 2","checked": false, "author": "fake" },
-            { "id": 3, "title": "Ruta Critica 3","checked": false, "author": "fake" },
-            { "id": 4, "title": "Ruta Critica 4","checked": false, "author": "fake" }
-    ],
-    "anos":
-    [
-            { "id": 1, "title": "2017", "author": "fake" },
-            { "id": 2, "title": "2018", "author": "fake" },
-            { "id": 3, "title": "2019", "author": "fake" },
-            { "id": 4, "title": "2020", "author": "fake" }
-    ],
-    "periodos":
-    [
-            { "id": 1, "title": "Periodo 1", "author": "fake" },
-            { "id": 2, "title": "Periodo 2", "author": "fake" },
-            { "id": 3, "title": "Periodo 3", "author": "fake" },
-            { "id": 4, "title": "Periodo 4", "author": "fake" },
-            { "id": 5, "title": "Periodo 5", "author": "fake" },
-            { "id": 6, "title": "Periodo 6", "author": "fake" },
-            { "id": 7, "title": "Periodo 7", "author": "fake" },
-            { "id": 8, "title": "Periodo 8", "author": "fake" },
-            { "id": 9, "title": "Periodo 9", "author": "fake" },
-            { "id": 10, "title": "Periodo 10", "author": "fake" },
-            { "id": 11, "title": "Periodo 11", "author": "fake" },
-            { "id": 12, "title": "Periodo 12", "author": "fake" }
     ],
     "report": [
-      { "id": 1, "periodo": "2017 Primer Periodo", "macroproceso": "Macroproceso 1", "proceso": "Proceso 1", "subProceso": "Sub-proceso 4", "verificador": "verificador 1", "tecnicasEvaluativas": "Téc Eva 1, Téc Eva 3", "fuenteReferencial": "Fuente 13, Fuente 11", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
-      { "id": 2, "periodo": "2018 Cuarto Periodo", "macroproceso": "Macroproceso 2", "proceso": "Proceso 2", "subProceso": "Sub-proceso 5", "verificador": "verificador 2", "tecnicasEvaluativas": "Téc Eva 4, Téc Eva 4", "fuenteReferencial": "Fuente 1, Fuente 18", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Inactivo", "I4": false, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
-      { "id": 3, "periodo": "2019 Segundo Periodo", "macroproceso": "Macroproceso 3", "proceso": "Proceso 3", "subProceso": "Sub-proceso 6", "verificador": "verificador 3", "tecnicasEvaluativas": "Téc Eva 7, Téc Eva 2", "fuenteReferencial": "Fuente 2, Fuente 18", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
-      { "id": 4, "periodo": "2020 Tercer Periodo", "macroproceso": "Macroproceso 3", "proceso": "Proceso 4", "subProceso": "Sub-proceso 6", "verificador": "verificador 4", "tecnicasEvaluativas": "Téc Eva 3, Téc Eva 2", "fuenteReferencial": "Fuente 14, Fuente 13", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false }
-  ]
+        { "id": 1, "periodo": "2017 Primer Periodo", "macroproceso": "Macroproceso 1", "proceso": "Proceso 1", "subProceso": "Sub-proceso 4", "verificador": "verificador 1", "tecnicasEvaluativas": "Téc Eva 1, Téc Eva 3", "fuenteReferencial": "Fuente 13, Fuente 11", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
+        { "id": 2, "periodo": "2018 Cuarto Periodo", "macroproceso": "Macroproceso 2", "proceso": "Proceso 2", "subProceso": "Sub-proceso 5", "verificador": "verificador 2", "tecnicasEvaluativas": "Téc Eva 4, Téc Eva 4", "fuenteReferencial": "Fuente 1, Fuente 18", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Inactivo", "I4": false, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
+        { "id": 3, "periodo": "2019 Segundo Periodo", "macroproceso": "Macroproceso 3", "proceso": "Proceso 3", "subProceso": "Sub-proceso 6", "verificador": "verificador 3", "tecnicasEvaluativas": "Téc Eva 7, Téc Eva 2", "fuenteReferencial": "Fuente 2, Fuente 18", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false },
+        { "id": 4, "periodo": "2020 Tercer Periodo", "macroproceso": "Macroproceso 3", "proceso": "Proceso 4", "subProceso": "Sub-proceso 6", "verificador": "verificador 4", "tecnicasEvaluativas": "Téc Eva 3, Téc Eva 2", "fuenteReferencial": "Fuente 14, Fuente 13", "Criterios": "Criterio X, Criterio Y, Criterio Z", "estadoVerificador": "Activo", "I4": true, "II2": false, "IIE": true, "III1": true, "III2": true, "III3": false, "RC1": true, "RC2": true, "RC3": true, "RC4": false }
+    ]
 }

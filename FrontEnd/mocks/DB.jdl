@@ -1,0 +1,114 @@
+
+entity RegistroVerificador {
+	id String,
+    vigenccia Date
+}
+
+entity Region {
+	id String,
+    nombre String
+}
+
+entity Macroprocesos{
+	id String,
+    nombre String
+}
+
+entity Procesos{
+	id String,
+    nombre String
+}
+
+entity Subprocesos{
+	id String,
+    nombre String
+}
+
+entity Verificadores{
+	id String,
+    nombre String
+}
+
+entity TecnicasEvaluativas{
+	id String,
+    nombre String
+}
+
+entity FuenteReferenciales{
+	id String,
+    nombre String
+}
+
+entity CriteriosPuntiacion{
+	id String,
+    nombre String
+}
+
+entity Categorias{
+	id String,
+    nombre String
+}
+
+entity IAFAS{
+	id String,
+    nombre String
+}
+
+entity RutasCritica{
+	id String,
+    nombre String
+}
+
+entity Anos{
+	id String,
+    nombre String
+}
+
+entity Periodos{
+	id String,
+    nombre String
+}
+
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Employee to Job{employee},
+	/**
+	* A relationship
+	*/
+	Department to
+	/**
+	* Another side of the same relationship
+	*/
+	Employee{department}
+}
+
+relationship ManyToOne {
+    Macroprocesos{id} to RegistroVerificador
+    Procesos{id} to RegistroVerificador
+    Subprocesos{id} to RegistroVerificador
+    Verificadores{id} to RegistroVerificador
+    TecnicasEvaluativas{id} to RegistroVerificador
+    FuenteReferenciales{id} to RegistroVerificador
+    CriteriosPuntiacion{id} to RegistroVerificador
+    Categorias{id} to RegistroVerificador
+    IAFAS{id} to RegistroVerificador
+    RutasCritica{id} to RegistroVerificador
+    Anos{id} to RegistroVerificador
+    Periodos{id} to RegistroVerificador
+}
+
+
+// Set pagination options
+paginate RegistroVerificador, Verificadores with infinite-scroll
+paginate RegistroVerificador, Verificadores with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

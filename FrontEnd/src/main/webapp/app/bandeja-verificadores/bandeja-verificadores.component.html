@@ -1,0 +1,61 @@
+<form name="form" role="form" >
+  <div>
+    <div>
+      <h4>Listado de Verificadores</h4>
+    </div>
+    <div>
+      <p>Criterios de Búsqueda</p> <br>
+      
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Periodo</th>
+                <th>Macro Proceso</th>
+                <th>Proceso</th>
+                <th>Sub Proceso</th>
+                <th>Verificador</th>
+                <th>Técnicas Evaluativas</th>
+                <th>Fuente Referencial</th>
+                <th>Criterios de Puntuación</th>
+                <th>Estado del Verificador</th>
+                <th>I-4</th>
+                <th>II-2</th>
+                <th>II-E</th>
+                <th>III-1</th>
+                <th>III-2</th>
+                <th>III-3</th>
+                <th>RC1</th>
+                <th>RC2</th>
+                <th>RC3</th>
+                <th>RC4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of reportList">
+                <th>{{ item.id }}</th>
+                <td>{{ item.periodo }}</td>
+                <td>{{ item.macroproceso }}</td>
+                <td>{{ item.proceso }}</td>
+                <td>{{ item.subProceso}}</td>
+                <td>{{ item.Verificador }}</td>
+                <td>{{ item.tecnicasEvaluativas }}</td>
+                <td>{{ item.fuenteReferencial }}</td>
+                <td>{{ item.Criterios }}</td>
+                <td>{{ item.estadoVerificador }}</td>
+                <td>{{ item.I4 }}</td>
+                <td>{{ item.II2 }}</td>
+                <td>{{ item.IIE }}</td>
+                <td>{{ item.III1 }}</td>
+                <td>{{ item.III2 }}</td>
+                <td>{{ item.III3 }}</td>
+                <td>{{ item.RC1 }}</td>
+                <td>{{ item.RC2 }}</td>
+                <td>{{ item.RC3 }}</td>
+                <td>{{ item.RC4 }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</form>

@@ -7,6 +7,7 @@ import { Authority } from 'app/shared/constants/authority.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 import { TestComponent } from './test/test.component';
+import { BandejaVerificadoresComponent } from './bandeja-verificadores/bandeja-verificadores.component';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
@@ -27,8 +28,12 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           loadChildren: () => import('./account/account.module').then(m => m.AccountModule),
         },
         {
-          path: 'test',
+          path: 'verificadores',
           component: TestComponent,
+        },
+        {
+          path: 'bandeja_verificadores',
+          component: BandejaVerificadoresComponent,
         },
         ...LAYOUT_ROUTES,
       ],

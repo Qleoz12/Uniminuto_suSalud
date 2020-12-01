@@ -57,6 +57,12 @@ export class MacroservicioService {
     return this.http.get<any>(SERVER_FAKEAPI_URL + 'periodos');
   }
 
+  // saveVerificador(): Observable<any> {}
+
+  getReport(): Observable<any[]> {
+    return this.http.get<any[]>(SERVER_FAKEAPI_URL + 'report');
+  }
+
   getAll(): Observable<any> {
     return forkJoin([
       this.getMacorservicios(),
@@ -71,6 +77,7 @@ export class MacroservicioService {
       this.getRutaCritica(),
       this.getAños(),
       this.getPeriodos(),
+      this.getReport(),
     ]);
   }
 }

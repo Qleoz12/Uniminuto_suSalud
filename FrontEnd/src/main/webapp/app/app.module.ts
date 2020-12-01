@@ -15,6 +15,7 @@ import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 import { TestComponent } from './test/test.component';
+import { BandejaVerificadoresComponent } from './bandeja-verificadores/bandeja-verificadores.component';
 import { DataModule } from './data/data.module';
 import { FormsModule } from '@angular/forms';
 
@@ -31,7 +32,17 @@ import { FormsModule } from '@angular/forms';
     DataModule,
     FormsModule,
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, TestComponent],
+  declarations: [
+    MainComponent,
+    NavbarComponent,
+    ErrorComponent,
+    PageRibbonComponent,
+    ActiveMenuDirective,
+    FooterComponent,
+    TestComponent,
+    BandejaVerificadoresComponent,
+  ],
+
   bootstrap: [MainComponent],
 })
 export class SuSaludFrontAppModule {}

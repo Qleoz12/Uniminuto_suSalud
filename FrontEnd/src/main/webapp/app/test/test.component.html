@@ -2,41 +2,34 @@
 
     <div class="form-group" *ngIf="macroprocesosList  ">
         <label >macroproceso</label>
-        <select class="form-control">
-            <option *ngFor="let macroproceso of macroprocesosList" [value]="macroproceso">{{ macroproceso.title }}</option>
+        <select class="form-control" [value]=verificador.macroproceso>
+            <option *ngFor="let macroproceso of macroprocesosList" [value]="macroproceso.id">{{ macroproceso.title }}</option>
         </select>
     </div>
 
     <div class="form-group" *ngIf="procesoList">
         <label >proceso</label>
-        <select class="form-control">
-            <option *ngFor="let macroproceso of procesoList" [value]="macroproceso">{{ macroproceso.title }}</option>
+        <select class="form-control" [value]=verificador.proceso>
+            <option *ngFor="let macroproceso of procesoList" [value]="macroproceso.id">{{ macroproceso.title }}</option>
         </select>
     </div>
 
     <div class="form-group" *ngIf="subProcesoList">
         <label >subProceso</label>
-        <select class="form-control">
-            <option *ngFor="let macroproceso of subProcesoList" [value]="macroproceso">{{ macroproceso.title }}</option>
+        <select class="form-control" [value]=verificador.subproceso>
+            <option *ngFor="let macroproceso of subProcesoList" [value]="macroproceso.id">{{ macroproceso.title }}</option>
         </select>
     </div>
 
     <div class="form-group" *ngIf="verificadorList">
         <label >verificador</label>
-        <select class="form-control">
-            <option *ngFor="let macroproceso of verificadorList" [value]="macroproceso">{{ macroproceso.title }}</option>
-        </select>
-    </div>
-
-    <div class="form-group" *ngIf="verificadorList">
-        <label >verificador</label>
-        <select class="form-control">
-            <option *ngFor="let macroproceso of verificadorList" [value]="macroproceso">{{ macroproceso.title }}</option>
+        <select class="form-control" [value]=verificador.verificador>
+            <option *ngFor="let macroproceso of verificadorList" [value]="macroproceso.id">{{ macroproceso.title }}</option>
         </select>
     </div>
 
     <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
-    
+
     <div class="row">
         <div class="col">
             <div class="form-group">
@@ -46,14 +39,14 @@
             <ul class="list-group list-group-scroll">
                 <li class="list-group-item" *ngFor="let macroproceso of tecnicasEvualuativas" [value]="macroproceso">
                     <div class="custom-control custom-checkbox m-1">
-                        <input type="checkbox" class="custom-control-input" id="customCheck-'{{macroproceso.id}}'" name="example1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck-'{{macroproceso.id}}'" name="example1"  [(ngModel)]="macroproceso.checked">
                         <label class="custom-control-label" for="customCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
                       </div>
                 </li>
               </ul>
         </div>
         <div class="col">
-            
+
             <div class="form-group">
                 <label for="">Fuentes Referenciales</label>
                 <input class="input" type="search" #agmSearch>
@@ -61,27 +54,27 @@
             <ul class="list-group list-group-scroll">
                 <div class="list-group-item" *ngFor="let macroproceso of fuentesRefenreciales">
                     <div class="custom-control custom-checkbox m-1">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2-'{{macroproceso.id}}'" name="example1">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2-'{{macroproceso.id}}'" name="example1" [(ngModel)]="macroproceso.checked">
                         <label class="custom-control-label" for="customCheck2-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
                       </div>
                 </div>
               </ul>
         </div>
     </div>
-    
+
     <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
 
-    <p style="display: block;">Criterios de puntuación</p>  
+    <p style="display: block;">Criterios de puntuación</p>
     <div class="row">
         <ul class="list-group">
             <li *ngFor="let macroproceso of criterios" >
-                
-                    <input type="number" 
-                            class="col-2  offset-2" 
+
+                    <input type="number"
+                            class="col-2  offset-2"
                             id="custom3-'{{macroproceso.id}}'" name="example1">
-                    <label  class="col-5" 
+                    <label  class="col-5"
                             for="custom3-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
-                 
+
             </li>
           </ul>
     </div>
@@ -95,14 +88,14 @@
             <ul class="list-group list-group-scroll">
                 <li class="list-group-item" *ngFor="let macroproceso of categorias" [value]="macroproceso">
                     <div class="custom-control custom-checkbox m-1">
-                        <input type="checkbox" class="custom-control-input" id="customCheck-'{{macroproceso.id}}'" name="example1">
-                        <label class="custom-control-label" for="customCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                        <input type="checkbox" class="custom-control-input" id="categoriaCheck-'{{macroproceso.id}}'" name="example1" [(ngModel)]="macroproceso.checked">
+                        <label class="custom-control-label" for="categoriaCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
                       </div>
                 </li>
               </ul>
         </div>
         <div class="col">
-            
+
             <div class="form-group">
                 <label for="">Ruta Crítica</label>
                 <input class="input" type="search" #agmSearch>
@@ -110,33 +103,32 @@
             <ul class="list-group list-group-scroll">
                 <div class="list-group-item" *ngFor="let macroproceso of rutasCritica">
                     <div class="custom-control custom-checkbox m-1">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2-'{{macroproceso.id}}'" name="example1">
-                        <label class="custom-control-label" for="customCheck2-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
+                        <input type="checkbox" class="custom-control-input" id="rutasCriticaCheck-'{{macroproceso.id}}'" name="example1" [(ngModel)]="macroproceso.checked">
+                        <label class="custom-control-label" for="rutasCriticaCheck-'{{macroproceso.id}}'">{{macroproceso.title}}</label>
                       </div>
                 </div>
               </ul>
         </div>
     </div>
-    
+
     <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
-    
+
     <div class="row">
-       
             <div class="col-3">
                 <label >año</label>
-                <select class="form-control">
+                <select class="form-control inline">
                     <option *ngFor="let macroproceso of anos" [value]="macroproceso">{{ macroproceso.title }}</option>
                 </select>
             </div>
             <div class="col-3">
                 <label >periodo</label>
-                <select class="form-control">
+                <select class="form-control inline">
                     <option *ngFor="let macroproceso of periodos" [value]="macroproceso">{{ macroproceso.title }}</option>
                 </select>
             </div>
 
         <div class="col-6">
-            estado 
+            estado
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
                 <label class="custom-control-label" for="customRadioInline1">activo</label>
@@ -146,7 +138,7 @@
                 <label class="custom-control-label" for="customRadioInline2">inactivo</label>
               </div>
 
-        </div>  
+        </div>
     </div>
-    <button type="submit"  class="btn btn-primary" jhiTranslate="settings.form.button">Save</button>
+    <button type="submit"  class="btn btn-primary" jhiTranslate="settings.form.button" (click)=save() >Save</button>
 </form>

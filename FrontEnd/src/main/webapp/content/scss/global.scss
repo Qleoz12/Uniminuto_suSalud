@@ -174,3 +174,8 @@ customs
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
+
+.form-control.inline {
+  width: auto;
+  display: inline-block;
+}
